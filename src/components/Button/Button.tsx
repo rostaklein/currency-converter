@@ -14,16 +14,20 @@ const StyledButton = styled.button`
   padding: 8px 18px;
   border-radius: 4px;
 
-  font-weight: 600;
+  font-weight: 700;
   white-space: nowrap;
 
   transition: background-color 200ms;
-  &:hover {
+  &:not(:disabled):hover {
     background-color: ${colors.gray200};
   }
 
-  &:active {
+  &:not(:disabled)&:active {
     background-color: ${colors.gray300};
+  }
+
+  &:disabled {
+    cursor: not-allowed;
   }
 `;
 
