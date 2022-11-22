@@ -20,8 +20,8 @@ const MainPage: React.FC = () => {
         </h3>
       ) : (
         <>
-          <CurrentExchangeTitle />
           <CurrencyConverter />
+          <CurrentExchangeTitle />
           <div className="my-4">
             <ListExchangeRates />
           </div>
