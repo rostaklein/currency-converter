@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Button } from "../../components/Button/Button";
 import { Input } from "../../components/Input/Input";
 import { HiSwitchHorizontal } from "react-icons/hi";
-import { FaEquals } from "react-icons/fa";
 import { Select } from "../../components/Select/Select";
 import { useCurrentCZKExchangeRates } from "../ListExchangeRates/useCurrentCZKExchangeRates";
 import { formatCurrency } from "../../utils/formatCurrency";
