@@ -1,11 +1,13 @@
-# Getting Started with Create React App
+# Simple 💰 Currency Converter app 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+**requires `vercel` installed to run simple API endpoints**
 
-In the project directory, you can run:
+To run the whole app, try in the root folder
+### `vercel dev`
 
+To run the FE only, run 👇
 ### `npm start`
 
 Runs the app in the development mode.\
