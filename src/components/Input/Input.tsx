@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { colors } from "../../styles/theme";
 
 type Props = {} & React.DetailedHTMLProps<
   React.InputHTMLAttributes<HTMLInputElement>,
@@ -7,12 +8,14 @@ type Props = {} & React.DetailedHTMLProps<
 >;
 
 const StyledInput = styled.input`
+  display: inline-block;
   font-size: 16px;
-  border: solid 2px #efefef;
+  border: solid 1px ${colors.gray100};
   transition: border-color 200ms;
-  padding: 4px 8px;
+  padding: 4px 16px;
   width: 100%;
-  font-weight: 600;
+  font-weight: 500;
+  border-radius: 4px;
 
   &:active,
   &:focus {
@@ -20,12 +23,11 @@ const StyledInput = styled.input`
   }
 
   &:focus {
-    border-color: #c1bdb1;
-    transition: border-color 200ms;
+    border-color: ${colors.gray200};
   }
 
   &::placeholder {
-    color: #cacaca;
+    color: ${colors.gray300};
   }
 `;
 
