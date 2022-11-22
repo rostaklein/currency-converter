@@ -93,13 +93,13 @@ export const CurrencyConverter: React.FC = () => {
         </Button>
       </form>
       {convertedResult && (
-        <div className="flex sm:space-x-4 bg-black/5 rounded px-8 py-4 items-center justify-center sm:flex-row flex-col sm:space-y-0 space-y-2">
+        <div className="flex sm:space-x-4 rounded px-8 py-4 items-center justify-center sm:flex-row flex-col sm:space-y-0 space-y-2 text-xl font-bold">
           <div className="flex space-x-4 bg-black/5 rounded px-4 sm:px-8 py-4">
             {formatCurrency(convertedResult.originalAmount, "CZK")}
           </div>
           <div className="text-center flex flex-col justify-center items-center">
             <span className="text-xs text-black/30">equals cca</span>
-            <FaEquals className="text-xs text-black/50" />
+            <HiSwitchHorizontal className="text-black/50" />
           </div>
           <div className="flex space-x-4 bg-black/5 rounded px-4 sm:px-8 py-4">
             {formatCurrency(
