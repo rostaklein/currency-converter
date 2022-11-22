@@ -32,7 +32,9 @@ async function handler(_: VercelRequest, res: VercelResponse) {
       .send({ msg: "Failed to get current exchange rates" });
   }
 
-  const [dateHeader, , ...rawExchangeRateLines] = data.split("\n");
+  const [dateHeader, , ...rawExchangeRateLines] = data
+    .split("\n")
+    .filter((line) => line.length > 0);
 
   const [date, exchangeRateNumber] = dateHeader.split(" #");
 
