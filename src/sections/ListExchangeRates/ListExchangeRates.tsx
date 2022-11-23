@@ -24,13 +24,9 @@ export const ListExchangeRates: React.FC<Props> = () => {
                   {rate.currency}{" "}
                   <span className="text-black/30">({rate.country})</span>
                 </td>
-                <td width={100}>{rate.code}</td>
-                <td className="text-right" width={100}>
-                  {rate.amount}
-                </td>
-                <td className="text-right" width={100}>
-                  {rate.rate}
-                </td>
+                <td>{rate.code}</td>
+                <td className="text-right">{rate.amount}</td>
+                <td className="text-right">{rate.rate}</td>
               </tr>
             ))
           : Array.from({ length: 12 }).map((_, i) => (
@@ -38,13 +34,13 @@ export const ListExchangeRates: React.FC<Props> = () => {
                 <td className="py-1">
                   <div className="h-2.5 bg-black/10 rounded-full w-48"></div>
                 </td>
-                <td className="py-1" width={100}>
+                <td className="py-1">
                   <div className="h-2.5 bg-black/10 rounded-full w-8"></div>
                 </td>
-                <td className="py-1 text-right" width={100}>
+                <td className="py-1 text-right">
                   <div className="h-2.5 bg-black/20 rounded-full w-4 inline-block"></div>
                 </td>
-                <td className="py-1 text-right" width={100}>
+                <td className="py-1 text-right">
                   <div className="h-2.5 bg-black/10 rounded-full w-12 inline-block"></div>
                 </td>
               </tr>
